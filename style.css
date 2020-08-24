@@ -33,9 +33,9 @@
   
 }
 .logo img{
-    width:200px;
-    height:62px;
-    padding:40px 0 0 40px;
+    width:150px;
+    height:45px;
+    padding:50px 0 0 40px;
     
   
 }
@@ -43,7 +43,7 @@
     color:#2C5F97;
     font-size:18px;
     font-weight:600;
-    padding:15px 30px 0px 30px;
+    padding:10px 30px 0px 30px;
     border-left: 1px solid rgba(16, 95, 156, 0.25);
     border-right: 1px solid rgba(16, 95, 156, 0.25);
     margin: 30px 0 0 40px;
@@ -110,18 +110,23 @@ nav{
     margin-top:15px;
 }
 
-.nav-bar li{
-    display:inline-block;
- 
+.nav-bar ul{
+        text-align:left;
+   
+        
 }
-.nav-bar a{
+.nav-bar ul li{
+    display:inline-block;
+    margin:8px 0 0 120px;    
+}
+.nav-bar  a{
    display:block;
     color:#f2f2f2;
-    margin:10px 0 0 115px;
     text-decoration: none;
     font-size: 16px;
     font-weight:600;
 }
+
 .main-body{
     background-image:url("image/hero.jpg");
     height: 95vh;
@@ -291,6 +296,7 @@ nav{
        height:30px;
        font-size:14px;
        padding:0 10px 0 10px;
+       cursor: pointer;
    }
   .help:hover{
        background-color:lightgreen;
@@ -328,4 +334,68 @@ nav{
    .contact-us a{
     text-decoration:none;
     color:white;
+   }
+   .products-content{
+    display: none;
+    position: absolute;
+    background-color: #105f9c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   }
+   .products-content a {
+    color: white;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+   }
+   .products-content a:hover {
+       background-color:black;
+   }
+   .products:hover .products-content{
+       display:block;
+   }
+   .registration-content{
+    display: none;
+    position: absolute;
+    background-color:#105f9c ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   }
+   .registration-content a {
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+   }
+   .registration-content a:hover {
+       background-color:black;
+   }
+   .registration:hover .registration-content{
+       display:block;
+   }
+   .login-content{
+    display: none;
+    position:absolute;
+    background-color: #105f9c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   }
+  
+   .login-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+   }
+   .login-content a:hover {
+       background-color:black;
+   }
+   .login:hover .login-content{
+       display:block;
    }
